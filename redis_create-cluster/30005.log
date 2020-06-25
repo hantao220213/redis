@@ -1,0 +1,124 @@
+11209:S 16 Jan 00:50:51.609 # Connection with master lost.
+11209:S 16 Jan 00:50:51.610 * Caching the disconnected master state.
+11209:S 16 Jan 00:50:51.623 # User requested shutdown...
+11209:S 16 Jan 00:50:51.624 * Calling fsync() on the AOF file.
+11209:S 16 Jan 00:50:51.624 * Removing the pid file.
+11209:S 16 Jan 00:50:51.624 # Redis is now ready to exit, bye bye...
+11322:C 16 Jan 00:50:57.191 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+11322:C 16 Jan 00:50:57.191 # Redis version=4.0.6, bits=64, commit=00000000, modified=0, pid=11322, just started
+11322:C 16 Jan 00:50:57.192 # Configuration loaded
+11323:M 16 Jan 00:50:57.195 * No cluster configuration found, I'm 85f71fcf4586218f3d06eba14ec67e51aca3af1a
+11323:M 16 Jan 00:50:57.205 * Running mode=cluster, port=30005.
+11323:M 16 Jan 00:50:57.205 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+11323:M 16 Jan 00:50:57.205 # Server initialized
+11323:M 16 Jan 00:50:57.205 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+11323:M 16 Jan 00:50:57.205 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+11323:M 16 Jan 00:50:57.205 * Ready to accept connections
+11323:M 16 Jan 00:51:10.121 # configEpoch set to 5 via CLUSTER SET-CONFIG-EPOCH
+11323:M 16 Jan 00:51:10.199 # IP address for this node updated to 127.0.0.1
+11323:M 16 Jan 00:51:13.033 # Cluster state changed: ok
+11323:M 16 Jan 00:51:14.446 * Slave 127.0.0.1:30010 asks for synchronization
+11323:M 16 Jan 00:51:14.446 * Partial resynchronization not accepted: Replication ID mismatch (Slave asked for '0fd44c1c9bfd89c997c266a45b1a6d2e8cf81ab6', my replication IDs are '82eb9878110e6f1497216064957090fb1177813a' and '0000000000000000000000000000000000000000')
+11323:M 16 Jan 00:51:14.446 * Starting BGSAVE for SYNC with target: disk
+11323:M 16 Jan 00:51:14.607 * Background saving started by pid 11376
+11376:C 16 Jan 00:51:14.762 * DB saved on disk
+11376:C 16 Jan 00:51:14.762 * RDB: 8 MB of memory used by copy-on-write
+11323:M 16 Jan 00:51:14.838 * Background saving terminated with success
+11323:M 16 Jan 00:51:14.839 * Synchronization with slave 127.0.0.1:30010 succeeded
+11323:M 16 Jan 09:53:34.395 # Connection with slave 127.0.0.1:30010 lost.
+11323:M 16 Jan 09:53:34.400 * Slave 127.0.0.1:30010 asks for synchronization
+11323:M 16 Jan 09:53:34.400 * Partial resynchronization request from 127.0.0.1:30010 accepted. Sending 0 bytes of backlog starting from offset 6595.
+11323:M 16 Jan 19:00:16.128 # Cluster state changed: fail
+11323:M 16 Jan 21:23:58.178 # Disconnecting timedout slave: 127.0.0.1:30010
+11323:M 16 Jan 21:23:58.178 # Connection with slave 127.0.0.1:30010 lost.
+11323:M 16 Jan 22:23:59.028 * Replication backlog freed after 3600 seconds without connected slaves.
+11323:signal-handler (1579184673) Received SIGTERM scheduling shutdown...
+11323:M 16 Jan 22:24:33.940 # User requested shutdown...
+11323:M 16 Jan 22:24:33.940 * Calling fsync() on the AOF file.
+11323:M 16 Jan 22:24:33.940 * Removing the pid file.
+11323:M 16 Jan 22:24:33.968 # Redis is now ready to exit, bye bye...
+9472:C 17 Jan 10:33:50.680 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+9472:C 17 Jan 10:33:50.682 # Redis version=4.0.6, bits=64, commit=00000000, modified=0, pid=9472, just started
+9472:C 17 Jan 10:33:50.682 # Configuration loaded
+9473:M 17 Jan 10:33:50.690 * Node configuration loaded, I'm 85f71fcf4586218f3d06eba14ec67e51aca3af1a
+9473:M 17 Jan 10:33:50.691 * Running mode=cluster, port=30005.
+9473:M 17 Jan 10:33:50.691 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+9473:M 17 Jan 10:33:50.691 # Server initialized
+9473:M 17 Jan 10:33:50.691 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+9473:M 17 Jan 10:33:50.691 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+9473:M 17 Jan 10:33:50.693 * DB loaded from append only file: 0.002 seconds
+9473:M 17 Jan 10:33:50.693 * Ready to accept connections
+9473:M 17 Jan 10:33:51.757 * Slave 127.0.0.1:30010 asks for synchronization
+9473:M 17 Jan 10:33:51.757 * Partial resynchronization not accepted: Replication ID mismatch (Slave asked for 'e4b389164e5e5f3d40da7dc47e0e6d664cb44309', my replication IDs are 'd9629d2b6d675624029d10eff4016780f3def58b' and '0000000000000000000000000000000000000000')
+9473:M 17 Jan 10:33:51.757 * Starting BGSAVE for SYNC with target: disk
+9473:M 17 Jan 10:33:51.758 * Background saving started by pid 9512
+9512:C 17 Jan 10:33:51.759 * DB saved on disk
+9512:C 17 Jan 10:33:51.760 * RDB: 6 MB of memory used by copy-on-write
+9473:M 17 Jan 10:33:51.805 * Background saving terminated with success
+9473:M 17 Jan 10:33:51.806 * Synchronization with slave 127.0.0.1:30010 succeeded
+9473:M 17 Jan 10:33:52.718 # Cluster state changed: ok
+9473:signal-handler (1579260340) Received SIGTERM scheduling shutdown...
+9473:M 17 Jan 19:25:40.100 # User requested shutdown...
+9473:M 17 Jan 19:25:40.100 * Calling fsync() on the AOF file.
+9473:M 17 Jan 19:25:40.101 * Removing the pid file.
+9473:M 17 Jan 19:25:40.101 # Redis is now ready to exit, bye bye...
+10016:C 12 Feb 22:23:28.456 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+10016:C 12 Feb 22:23:28.457 # Redis version=4.0.6, bits=64, commit=00000000, modified=0, pid=10016, just started
+10016:C 12 Feb 22:23:28.457 # Configuration loaded
+10020:M 12 Feb 22:23:28.459 * Node configuration loaded, I'm 85f71fcf4586218f3d06eba14ec67e51aca3af1a
+10020:M 12 Feb 22:23:28.460 * Running mode=cluster, port=30005.
+10020:M 12 Feb 22:23:28.460 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+10020:M 12 Feb 22:23:28.460 # Server initialized
+10020:M 12 Feb 22:23:28.460 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+10020:M 12 Feb 22:23:28.460 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+10020:M 12 Feb 22:23:28.462 * DB loaded from append only file: 0.002 seconds
+10020:M 12 Feb 22:23:28.462 * Ready to accept connections
+10020:M 12 Feb 22:23:29.507 * Slave 127.0.0.1:30010 asks for synchronization
+10020:M 12 Feb 22:23:29.507 * Partial resynchronization not accepted: Replication ID mismatch (Slave asked for '2df293f572ccefd62f418fc282ec8e7bc88a7748', my replication IDs are '77c53b49abe6dbaf0ff01d5d217acff5bfe313f0' and '0000000000000000000000000000000000000000')
+10020:M 12 Feb 22:23:29.507 * Starting BGSAVE for SYNC with target: disk
+10020:M 12 Feb 22:23:29.507 * Background saving started by pid 10053
+10053:C 12 Feb 22:23:29.508 * DB saved on disk
+10053:C 12 Feb 22:23:29.509 * RDB: 0 MB of memory used by copy-on-write
+10020:M 12 Feb 22:23:29.569 * Background saving terminated with success
+10020:M 12 Feb 22:23:29.569 * Synchronization with slave 127.0.0.1:30010 succeeded
+10020:M 12 Feb 22:23:30.472 # Cluster state changed: ok
+10020:M 12 Feb 22:54:14.256 # Cluster state changed: fail
+10020:M 12 Feb 22:55:12.948 # Disconnecting timedout slave: 127.0.0.1:30010
+10020:M 12 Feb 22:55:12.948 # Connection with slave 127.0.0.1:30010 lost.
+10020:signal-handler (1581519475) Received SIGTERM scheduling shutdown...
+10020:M 12 Feb 22:57:55.912 # User requested shutdown...
+10020:M 12 Feb 22:57:55.912 * Calling fsync() on the AOF file.
+10020:M 12 Feb 22:57:55.912 * Removing the pid file.
+10020:M 12 Feb 22:57:55.912 # Redis is now ready to exit, bye bye...
+19158:C 10 May 11:40:22.882 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+19158:C 10 May 11:40:22.883 # Redis version=4.0.6, bits=64, commit=00000000, modified=0, pid=19158, just started
+19158:C 10 May 11:40:22.883 # Configuration loaded
+19159:M 10 May 11:40:22.892 * Node configuration loaded, I'm 85f71fcf4586218f3d06eba14ec67e51aca3af1a
+19159:M 10 May 11:40:22.894 * Running mode=cluster, port=30005.
+19159:M 10 May 11:40:22.894 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+19159:M 10 May 11:40:22.894 # Server initialized
+19159:M 10 May 11:40:22.894 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+19159:M 10 May 11:40:22.894 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+19159:M 10 May 11:40:22.903 * DB loaded from append only file: 0.009 seconds
+19159:M 10 May 11:40:22.904 * Ready to accept connections
+19159:M 10 May 11:40:23.963 * Slave 127.0.0.1:30010 asks for synchronization
+19159:M 10 May 11:40:23.963 * Partial resynchronization not accepted: Replication ID mismatch (Slave asked for 'c26bc59a94e3c8891dc161b2b263b12545de5f44', my replication IDs are '95ca287cdf61f508de852706aae28ff985fe4a6a' and '0000000000000000000000000000000000000000')
+19159:M 10 May 11:40:23.963 * Starting BGSAVE for SYNC with target: disk
+19159:M 10 May 11:40:23.965 * Background saving started by pid 19195
+19195:C 10 May 11:40:23.992 * DB saved on disk
+19195:C 10 May 11:40:23.994 * RDB: 0 MB of memory used by copy-on-write
+19159:M 10 May 11:40:24.026 * Background saving terminated with success
+19159:M 10 May 11:40:24.026 * Synchronization with slave 127.0.0.1:30010 succeeded
+19159:M 10 May 11:40:24.945 # Cluster state changed: ok
+19159:M 11 May 07:39:15.542 # Disconnecting timedout slave: 127.0.0.1:30010
+19159:M 11 May 07:39:15.542 # Connection with slave 127.0.0.1:30010 lost.
+19159:M 11 May 07:39:15.719 * Slave 127.0.0.1:30010 asks for synchronization
+19159:M 11 May 07:39:15.719 * Partial resynchronization request from 127.0.0.1:30010 accepted. Sending 0 bytes of backlog starting from offset 60495.
+19159:M 11 May 09:11:04.602 # Connection with slave 127.0.0.1:30010 lost.
+19159:M 11 May 09:11:04.605 * Slave 127.0.0.1:30010 asks for synchronization
+19159:M 11 May 09:11:04.605 * Partial resynchronization request from 127.0.0.1:30010 accepted. Sending 0 bytes of backlog starting from offset 67061.
+19159:signal-handler (1589159483) Received SIGTERM scheduling shutdown...
+19159:M 11 May 09:11:23.965 # User requested shutdown...
+19159:M 11 May 09:11:23.965 * Calling fsync() on the AOF file.
+19159:M 11 May 09:11:23.965 * Removing the pid file.
+19159:M 11 May 09:11:23.965 # Redis is now ready to exit, bye bye...
